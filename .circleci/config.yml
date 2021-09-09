@@ -6,8 +6,10 @@ workflows:
   build:
     jobs:
       - build
+
 jobs:
   build:
+    working_directory: ~/project
     docker:
       - image: cimg/node:16.8.0
     steps:
